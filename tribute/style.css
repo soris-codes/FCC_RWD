@@ -12,16 +12,13 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#main {
-  padding: 20px 50px;
-  margin: 70px;
-}
 
 #title {
   font-family: 'Norican', cursive;
   font-size: 4rem;
-  color: var(--dark-color);
+  color: var(--primary-color);
   text-align: center;
+  text-decoration-style: wavy;
 }
 
 #img-div {
@@ -41,16 +38,12 @@ body {
 #img-caption {
   font-size: .6rem;
   padding: 10px;
+  border-radius: 8px;
   text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
-#tribute-info {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 40px;
-  
-
-}
 
 #tribute-link {
   background-color: var(--accent-color);
@@ -64,6 +57,47 @@ body {
 }
 
 #tribute-link:hover {
-  background-color: var(--dark-color);
+  background-color: var(--primary-color);
   color: var(--secondary-color);
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 400px) {
+  #content {
+   display: block;
+  }
+
+  #tribute-info {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    width: 100%;
+  }
+
+  #main {
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #content {
+    display: flex;
+  }
+
+  #main {
+    padding: 20px 50px;
+    margin: 20px 75px;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+  }
+
+  #tribute-info {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    width: 50%;
+  }
 }
